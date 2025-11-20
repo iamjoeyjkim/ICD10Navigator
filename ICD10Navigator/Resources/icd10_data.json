@@ -1,0 +1,57 @@
+[
+    {
+        "code": "A00",
+        "description": "Cholera",
+        "category": "Certain infectious and parasitic diseases"
+    },
+    {
+        "code": "A00.0",
+        "description": "Cholera due to Vibrio cholerae 01, biovar cholerae",
+        "category": "Certain infectious and parasitic diseases"
+    },
+    {
+        "code": "A00.1",
+        "description": "Cholera due to Vibrio cholerae 01, biovar eltor",
+        "category": "Certain infectious and parasitic diseases"
+    },
+    {
+        "code": "A00.9",
+        "description": "Cholera, unspecified",
+        "category": "Certain infectious and parasitic diseases"
+    },
+    {
+        "code": "J00",
+        "description": "Acute nasopharyngitis [common cold]",
+        "category": "Diseases of the respiratory system"
+    },
+    {
+        "code": "J01",
+        "description": "Acute sinusitis",
+        "category": "Diseases of the respiratory system"
+    },
+    {
+        "code": "J01.0",
+        "description": "Acute maxillary sinusitis",
+        "category": "Diseases of the respiratory system"
+    },
+    {
+        "code": "J01.1",
+        "description": "Acute frontal sinusitis",
+        "category": "Diseases of the respiratory system"
+    },
+    {
+        "code": "I10",
+        "description": "Essential (primary) hypertension",
+        "category": "Diseases of the circulatory system"
+    },
+    {
+        "code": "E11",
+        "description": "Type 2 diabetes mellitus",
+        "category": "Endocrine, nutritional and metabolic diseases"
+    },
+    {
+        "code": "M54.5",
+        "description": "Low back pain",
+        "category": "Diseases of the musculoskeletal system and connective tissue"
+    }
+]
