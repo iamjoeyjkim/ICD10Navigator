@@ -48,6 +48,8 @@ struct CodeDetailView: View {
             .padding()
         }
         .navigationTitle("Code Details")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+        #endif
     }
 }
