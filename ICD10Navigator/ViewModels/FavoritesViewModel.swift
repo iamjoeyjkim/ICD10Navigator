@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 class FavoritesViewModel: ObservableObject {
     @Published var favorites: Set<ICD10Code> = []
