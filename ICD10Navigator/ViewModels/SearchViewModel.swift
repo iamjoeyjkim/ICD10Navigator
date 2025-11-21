@@ -10,6 +10,11 @@ class SearchViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
     
+    // Filter States
+    @Published var selectedSystem: String = "All"
+    @Published var selectedLaterality: String = "All"
+    @Published var selectedEncounter: String = "All"
+    
     private var currentTask: Task<Void, Never>?
     
     init() {
@@ -20,6 +25,15 @@ class SearchViewModel: ObservableObject {
                 self?.performSearch(query: query)
             }
             .store(in: &cancellables)
+    }
+    
+    var filteredResults: [ICD10Code] {
+        searchResults.filter { code in
+            let matchesSystem = selectedSystem == "All" || code.chapter == selectedSystem
+            let matchesLaterality = selectedLaterality == "All" || code.laterality == selectedLaterality
+            let matchesEncounter = selectedEncounter == "All" || code.encounter == selectedEncounter
+            return matchesSystem && matchesLaterality && matchesEncounter
+        }
     }
     
     private func performSearch(query: String) {
